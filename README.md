@@ -2,6 +2,7 @@
 
 This is a simple implementation of **federated learning (FL)** with the **noising before model aggregation FL (NbAFL)** strategy. The bare FL model (without NbAFL) is actually the reproduction of the paper [Communication-Efficient Learning of Deep Networks from Decentralized Data](https://arxiv.org/abs/1602.05629) and the NbAFL algorithm was proposed in [Federated Learning with Differential Privacy: Algorithms and Performance Analysis](https://arxiv.org/abs/1911.00222)
 
+这里我改成了读取一个CSV进行5分类训练，后面我可能会改成2分类，或者换成其他数据集，所以先保存一下
 
 ## Requirements
 - PyTorch
