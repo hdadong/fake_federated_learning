@@ -1,0 +1,37 @@
+import random
+import csv
+import pandas as pd
+import pandas
+from sklearn.utils import shuffle
+
+def load_cnn_virus(num_users):
+
+    dataframe = pandas.read_csv('feature_vectors_syscallsbinders_frequency_5_Cat.csv')
+    dataframe = shuffle(dataframe)
+    col1 = dataframe.columns
+    array = dataframe.values
+
+
+    train_array = array[0:10000]
+
+
+    test_array = array[10000:]
+
+    size = int(10000/num_users)
+    for i in range(num_users):
+        if i != num_users - 1:
+            #print(train_data[0:10])
+            train_f = train_array[i*size:(i+1)*(size)]#11598, 1, 47, 10
+            list_df=pd.DataFrame(train_f,columns=col1)
+            list_df.to_csv(str(i)+'train'+'.csv',index=0)
+
+        if i == num_users - 1:
+            train_f = train_array[i*size:]
+            list_df=pd.DataFrame(train_f,columns=col1)
+            list_df.to_csv(str(i)+'train'+'.csv',index=0)
+    list_df = pd.DataFrame(test_array,columns=col1)
+    list_df.to_csv('test'+'.csv',index=0)
+
+#print(test)
+client_num = 2
+d = load_cnn_virus(client_num)
