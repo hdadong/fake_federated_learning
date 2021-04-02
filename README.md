@@ -6,8 +6,11 @@ This is a simple implementation of **federated learning (FL)** with the **noisin
 1.改了e+1%3
 2.优化器永久保存
 3.删除了没用的加噪音代码
-4.                optimizer.step()
-                optimizer.zero_grad()放进了For循环里面
+4. optimizer.step()
+optimizer.zero_grad()放进了For循环里面
+
+经过测试2，4的改动大幅度提高了准确率。
+
 ## Requirements
 - PyTorch
 - NumPy
