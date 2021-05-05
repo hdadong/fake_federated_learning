@@ -1,6 +1,6 @@
 # Federated Learning
-<br>聚合方式实现了fed-avg[1],逆距离[5]，优化器聚合[4]
-<br>优化器的参数保留方法实现了[3]的保存本地adam优化器的方法
+<br>聚合方式实现了fed-avg[1],逆距离[5]，avg-adan优化器聚合[4]
+<br>优化器的参数保留方法实现了[3]的保存本地adam优化器的方法save-adam
 <br>添加噪音的方法实现了对梯度添加噪音，对模型参数添加噪音[2]。
 
 ## Requirements
@@ -14,8 +14,8 @@
 
 
 ## Usag
-1. Set parameters in test.p
-2. Run ```python test.py``` or Execute test.ipynb to train model on MNIST dataset
+1. Set parameters in test.py
+2. Run ```python test.py``` or Execute test.ipynb to train model 
 
 ### FL model parameters
 ```python
