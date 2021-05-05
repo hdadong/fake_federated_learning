@@ -1,7 +1,7 @@
 # Federated Learning
-聚合方式实现了fed-avg[1],逆距离[5]，优化器聚合[4]
-优化器的参数保留方法实现了[3]的保存本地adam优化器的方法
-添加噪音的方法实现了对梯度添加噪音，对模型参数添加噪音[2]。
+<br>聚合方式实现了fed-avg[1],逆距离[5]，优化器聚合[4]
+<br>优化器的参数保留方法实现了[3]的保存本地adam优化器的方法
+<br>添加噪音的方法实现了对梯度添加噪音，对模型参数添加噪音[2]。
 
 ## Requirements
 - PyTorch
@@ -52,8 +52,8 @@ noniid_label = 2    #设置每个客户端有多少个类别
 ```
 
 ## Reference
-[1] McMahan, Brendan, Eider Moore, Daniel Ramage, Seth Hampson, and Blaise Aguera y Arcas. Communication-Efficient Learning of Deep Networks from Decentralized Data. In *Proc. Artificial Intelligence and Statistics (AISTATS)*, 2017.
-[2] K. Wei, J. Li, M. Ding, C. Ma, H. H. Yang, F. Farokhi, S. Jin, T. Q. S. Quek, H. V. Poor, Federated Learning with Differential Privacy: Algorithms and Performance Analysis. In *IEEE Transactions on Information Forensics & Security*, 15, pp. 3454-3469, 2020.
-[3] Li W. et al. (2019) Privacy-Preserving Federated Brain Tumour Segmentation. In: Suk HI., Liu M., Yan P., Lian C. (eds) Machine Learning in Medical Imaging. MLMI 2019. Lecture Notes in Computer Science, vol 11861. Springer, Cham. https://doi.org/10.1007/978-3-030-32692-0_16
-[4] Yu, Hao et al. “On the Linear Speedup Analysis of Communication Efficient Momentum SGD for Distributed Non-Convex Optimization.” ICML (2019).
-[5] Yeganeh, Yousef et al. “Inverse Distance Aggregation for Federated Learning with Non-IID Data.” DART/DCL@MICCAI (2020).
+<br>[1] McMahan, Brendan, Eider Moore, Daniel Ramage, Seth Hampson, and Blaise Aguera y Arcas. Communication-Efficient Learning of Deep Networks from Decentralized Data. In *Proc. Artificial Intelligence and Statistics (AISTATS)*, 2017.
+<br>[2] K. Wei, J. Li, M. Ding, C. Ma, H. H. Yang, F. Farokhi, S. Jin, T. Q. S. Quek, H. V. Poor, Federated Learning with Differential Privacy: Algorithms and Performance Analysis. In *IEEE Transactions on Information Forensics & Security*, 15, pp. 3454-3469, 2020.
+<br>[3] Li W. et al. (2019) Privacy-Preserving Federated Brain Tumour Segmentation. In: Suk HI., Liu M., Yan P., Lian C. (eds) Machine Learning in Medical Imaging. MLMI 2019. Lecture Notes in Computer Science, vol 11861. Springer, Cham. https://doi.org/10.1007/978-3-030-32692-0_16
+<br>[4] Yu, Hao et al. “On the Linear Speedup Analysis of Communication Efficient Momentum SGD for Distributed Non-Convex Optimization.” ICML (2019).
+<br>[5] Yeganeh, Yousef et al. “Inverse Distance Aggregation for Federated Learning with Non-IID Data.” DART/DCL@MICCAI (2020).
